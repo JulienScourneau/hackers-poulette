@@ -13,27 +13,27 @@
 <main class="main">
     <form class="form" id="" method="post" action="assets/php/index.php">
         <label class="form__name__text" id="name" for="name">
-            Nom
-            <input name="name" type="text" value="" minlength="0" maxlength="255" required>
+            <input placeholder=" " class="text-input" name="name" type="text" value="" minlength="0" maxlength="255" required>
+            <span>Nom</span>
         </label>
         <label class="form__name__firstname" id="firstname" for="firstname">
             Prénom
-            <input name="firstname" type="text" value="" minlength="0" maxlength="255" required>
+            <input class="text-input" name="firstname" type="text" value="" minlength="0" maxlength="255" required>
         </label>
         <label class="form__name__email" id="email" for="email">
             Adresse mail
-            <input name="email" type="text" value="" minlength="0" maxlength="255" required>
+            <input class="text-input" name="email" type="email" value="" minlength="0" maxlength="255" required>
         </label>
         <label class="form__name__file" id="file" for="file">
             File
-            <input name="file" type="file" value="">
+            <input name="file" type="file" value="" accept="image/x-png, image/x-jpeg">
         </label>
         <label class="form__name__description" id="description" for="description">
             Description
             <input name="description" type="text" value="" minlength="0" maxlength="1000" required>
         </label>
-        <button name="button" type="submit">Envoyer</button>
     </form>
+    <button id="post">Envoyer</button>
 </main>
 </body>
 </html>
