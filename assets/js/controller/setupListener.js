@@ -1,6 +1,6 @@
 import {showInputError} from "../view/showInputError.js";
 
-import {fetchResponse} from "./models/insertResponse.js";
+import {fetchResponse} from "../models/insertResponse.js";
 
 export const setupListener = () => {
     document.getElementById("post").addEventListener("click", () => {
