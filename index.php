@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!doctype html>
 <html>
 <head>
@@ -11,7 +16,7 @@
 </head>
 <body>
 <main class="main">
-    <form class="form" id="" method="post" action="php/insert.php">
+    <form class="form" id="" method="post" action="php/insert.php" enctype="multipart/form-data">
         <label class="form__name__text" id="name" for="name">
             <input placeholder=" " class="text-input input" name="name" type="text" value="" minlength="0"
                    maxlength="255"

@@ -1,7 +1,7 @@
 <?php
 
 include 'database.php';
-header("location: ../index.html");
+header("location: ../index.php");
 $name = htmlspecialchars($_POST['name']);
 $firstname = htmlspecialchars($_POST['firstname']);
 $mail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
