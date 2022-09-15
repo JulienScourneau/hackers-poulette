@@ -84,14 +84,21 @@ span {
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-input {
+.input {
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
   border: none;
 }
 
-input:focus + span, input:not(:placeholder-shown) + span {
+textarea {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.input:focus + span, .input:not(:placeholder-shown) + span {
   opacity: 1;
   transform: scale(85%) translateY(-100%);
 }

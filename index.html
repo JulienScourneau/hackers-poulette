@@ -11,29 +11,36 @@
 </head>
 <body>
 <main class="main">
-    <form class="form" id="" method="post" action="assets/php/index.php">
+    <form class="form" id="" method="post" action="php/insert.php">
         <label class="form__name__text" id="name" for="name">
-            <input placeholder=" " class="text-input" name="name" type="text" value="" minlength="0" maxlength="255" required>
+            <input placeholder=" " class="text-input input" name="name" type="text" value="" minlength="0"
+                   maxlength="255"
+                   required>
             <span>Nom</span>
         </label>
         <label class="form__name__firstname" id="firstname" for="firstname">
-            Prénom
-            <input class="text-input" name="firstname" type="text" value="" minlength="0" maxlength="255" required>
+            <input placeholder=" " class="text-input input" name="firstname" type="text" value="" minlength="0"
+                   maxlength="255" required>
+            <span>Prénom</span>
         </label>
         <label class="form__name__email" id="email" for="email">
-            Adresse mail
-            <input class="text-input" name="email" type="email" value="" minlength="0" maxlength="255" required>
+            <input placeholder=" " class="text-input input" name="email" type="email" value="" minlength="0"
+                   maxlength="255" required>
+            <span>Adresse mail</span>
         </label>
         <label class="form__name__file" id="file" for="file">
             File
-            <input name="file" type="file" value="" accept="image/x-png, image/x-jpeg">
+            <input class="form__name__file__input" name="file" type="file" value="" accept="image/x-png, image/x-jpeg">
         </label>
-        <label class="form__name__description" id="description" for="description">
-            Description
-            <input name="description" type="text" value="" minlength="0" maxlength="1000" required>
+        <label class="form__name__description " id="description" for="description">
+
+            <textarea placeholder=" " class="input" name="description" type="text" value="" minlength="0"
+                      maxlength="1000" required></textarea>
+            <span>Description</span>
         </label>
+        <button id="post">Envoyer</button>
     </form>
-    <button id="post">Envoyer</button>
+
 </main>
 </body>
 </html>
