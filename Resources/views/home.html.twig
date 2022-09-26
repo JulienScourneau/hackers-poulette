@@ -1,0 +1,46 @@
+{#-----------------------------------------Head------------------------------------------ #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% block style %}
+        <link
+                href="./assets/style/css/style.css"
+                rel="stylesheet"
+                type="text/css"
+        />
+    {% endblock %}
+
+    {% block javascript %}
+    <script
+        type="module"
+        src="assets/js/main.js"
+        defer>
+    </script>
+
+    {% endblock %}
+
+    <title>{% block titlePage %} Hackers {% endblock %}</title>
+</head>
+{#-----------------------------------------Header---------------------------------------- #}
+<body>
+{% block header %}
+
+{% endblock %}
+
+
+{#-----------------------------------------Body------------------------------------------ #}
+{% block body %}
+    <p>Home</p>
+
+{% endblock %}
+
+
+{#-----------------------------------------Footer--------------------------------------- #}
+{% include 'element_footer.html.twig' %}
+</body>
+

@@ -2,8 +2,13 @@
 
 namespace App\Routes;
 
-$router = new \AltoRouter();
+use App\Controllers\HomeController;
+use Bramus\Router\Router;
 
-$router->map('GET', '/', function () {
-    require __ROOT__.'/Ressources/views/home.php';
+$router = new Router();
+
+$router->get('/', function() {
+    (new HomeController)->index();
 });
+
+$router->run();
