@@ -9,8 +9,13 @@ La validation des données ce fait grâce à la librairie Rakit/validation.
 
 #### Update à venir :
 Refactor de la structure entière du projet.
+
 Ajout du Captcha (WIP).
+
 Gestion des erreurs.
+
 Validation cotée client.
+
 Envoie d'un email de confirmation.
+
 Ajout d'un dashboard.
